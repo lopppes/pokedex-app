@@ -1,0 +1,32 @@
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 25px;
+    background-color: #000;
+    font-size: 14px; 
+    color: #fff;
+    padding: 20px;  
+    border-radius: 50%;  
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease-in;
+    z-index: 1;
+    border: 2px solid #fff;
+
+  }
+  
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+  }
+  
+.back-to-top:is(:hover, :focus) {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+  }
+
+.back{
+    transform: rotate(90deg);
+  }
